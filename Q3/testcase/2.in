@@ -1,0 +1,16 @@
+empty
+push_back 10
+push_back 20
+push_back 30
+insert 1 40
+insert 3 50
+print
+print_r
+front
+back
+empty
+erase 3
+erase 1
+empty
+print
+print_r

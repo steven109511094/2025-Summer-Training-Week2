@@ -1,0 +1,17 @@
+empty
+push_back 10
+push_back 20
+push_back 30
+push_back 40
+push_back 50
+print
+print_r
+front
+back
+empty
+pop_back
+pop_back
+pop_back
+pop_back
+pop_back
+empty

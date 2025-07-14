@@ -1,0 +1,6 @@
+*.o
+*.out
+.nfs*
+myStack
+myQueue
+myLinkedList
