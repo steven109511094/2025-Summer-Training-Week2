@@ -116,4 +116,4 @@ You can modify gen_pattern.cpp in each part and run command "make gen_pattern" i
 :::
 
 # Have fun \!\!\!\!\!
-![114514](https://hackmd.io/_uploads/HJpxI4NUxx.jpg)
+![114514](image114514.jpg)
