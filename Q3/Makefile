@@ -34,11 +34,22 @@ $(OBJDIR)/%.o: $(SRCDIR)/%.cpp | $(OBJDIR) Makefile
 run:
 	./myLinkedList
 
-check:
+check_ans:
+	chmod +x gen_golden
+	./gen_golden
+	chmod +x script/check_ans.sh
+	bash ./script/check_ans.sh
+
+check_mem:
 	$(CHECKCC) $(CHECKFLAGS) ./myLinkedList
+
+gen_pattern: gen_pattern.cpp
+	$(CXX) $(WARNINGS) $(CXXFLAGS) $^ -o $@
+	./$@
 
 clear: 
 	rm -f $(TARGET)
 	rm -f $(OBJS)
+	rm -f gen_pattern
 	rm -f output/*
 	

@@ -29,10 +29,9 @@ public:
     Stack();
     ~Stack();
 
-    // help functions
     void push(const int& data);
     bool pop();
-    const int& top() const;
+    int top();
     bool empty();
 };
 

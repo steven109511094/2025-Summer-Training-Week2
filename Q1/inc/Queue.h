@@ -1,5 +1,5 @@
 #ifndef _QUEUE_H_
-#define _QUEUE_H
+#define _QUEUE_H_
 
 #include <iostream>
 #include <limits.h>
@@ -29,7 +29,6 @@ public:
     Queue();
     ~Queue();
 
-    // Help function
     void push(int data);
     bool pop();
     int front();

@@ -7,6 +7,12 @@
 
 #include "LinkedList.h"
 
+//=================================================//
+//  You only can modify DEBUG_FLAG for debugging.  //
+//=================================================//
+
+#define DEBUG_FLAG false
+
 int main(){
     // Check input folder path
     string inputFolderName = "testcase";
@@ -52,7 +58,11 @@ int main(){
 
         cout << "Running " << inputFileName << "..." << endl;
         string line;
+        int num = 0;
         while(getline(fin, line)){
+            num++;
+            if(DEBUG_FLAG) cout << "Execute line " << num << endl;
+
             istringstream iss(line);
             string token;
             int data;

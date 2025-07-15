@@ -18,10 +18,10 @@ void LinkedList::insert(const Iterator& pos, const int& data){
 bool LinkedList::erase(Iterator& pos){
 }
 
-const int& LinkedList::front(){
+int LinkedList::front(){
 }
 
-const int& LinkedList::back(){
+int LinkedList::back(){
 }
 
 bool LinkedList::empty(){
@@ -44,6 +44,9 @@ LinkedList::Iterator LinkedList::rend(){
 
 // Iterator
 LinkedList::Iterator::Iterator(){
+}
+
+LinkedList::Iterator::Iterator(Node* trgNode){
 }
 
 LinkedList::Iterator::~Iterator(){

@@ -8,6 +8,10 @@
 
 using namespace std;
 
+//===========================================//
+//  You can't modify anything in this file.  //
+//===========================================//
+
 int main(){
     // Check input folder path
     string inputFolderName = "testcase/myStack";

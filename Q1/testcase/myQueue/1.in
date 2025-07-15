@@ -1,0 +1,16 @@
+empty
+push 10
+empty
+push 20
+empty
+push 30
+empty
+front
+pop
+empty
+front
+pop
+empty
+front
+pop
+empty

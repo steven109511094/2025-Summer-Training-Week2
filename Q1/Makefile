@@ -38,13 +38,32 @@ run:
 	./myStack
 	./myQueue
 
-check:
+check_stack_ans:
+	chmod +x gen_stack_golden
+	./gen_stack_golden
+	chmod +x script/check_stack_ans.sh
+	bash ./script/check_stack_ans.sh
+
+check_queue_ans:
+	chmod +x gen_queue_golden
+	./gen_queue_golden
+	chmod +x script/check_queue_ans.sh
+	bash ./script/check_queue_ans.sh
+
+check_stack_mem:
 	$(CHECKCC) $(CHECKFLAGS) ./myStack
+
+check_queue_mem:
 	$(CHECKCC) $(CHECKFLAGS) ./myQueue
+
+gen_pattern: gen_pattern.cpp
+	$(CXX) $(WARNINGS) $(CXXFLAGS) $^ -o $@
+	./$@
 
 clear: 
 	rm -f $(TARGET)
 	rm -f $(OBJS)
+	rm -f gen_pattern
 	rm -f output/myStack/*
 	rm -f output/myQueue/*
 	

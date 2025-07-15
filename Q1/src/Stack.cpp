@@ -12,7 +12,7 @@ void Stack::push(const int& data){
 bool Stack::pop(){
 }
 
-const int& Stack::top() const{
+int Stack::top(){
 }
 
 bool Stack::empty(){
