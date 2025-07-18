@@ -24,7 +24,6 @@ public:
     QueueByStack();
     ~QueueByStack();
 
-    // Help function
     void push(const int& data);     // Insert one element at the back
     bool pop();                     // Erase the front element
     int front();                    // Get the data of the front element
