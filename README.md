@@ -24,6 +24,8 @@ Stack: LIFO (Last In First Out)
 | `int` top() | If there is no element in this container, return INT_MIN. <br> Otherwise, return the data of the top element.|
 | `bool` empty() | If there is no element in this container, return true. <br> Otherwise, return false.|
 
+Ref: cplusplus.com/reference/stack/stack/
+
 Queue: FIFO (First In First Out)
 
 | Function | Specification |
@@ -32,6 +34,8 @@ Queue: FIFO (First In First Out)
 | `bool` pop() | If there is no element in this container, return false. <br> Otherwise, erase 1 element at the front and return true.|
 | `int` front() | If there is no element in this container, return INT_MIN. <br> Otherwise, return the data of the front element.|
 | `bool` empty() | If there is no element in this container, return true. <br> Otherwise, return false.|
+
+Ref: cplusplus.com/reference/queue/queue/
 
 :::danger
 Constraint:
@@ -70,6 +74,8 @@ Iterator:
 |`Iterator&` operator++() | Let the iterator point to next element.|
 |`Iterator&` operator- -() | Let the iterator point to previous element.|
 |`bool` operator!=(const Iterator& other) const | If the two iterator point to 2 different elements, return true. <br> Otherwise, return false.|
+
+cplusplus.com/reference/list/list/
 
 :::danger
 Constraint:
@@ -116,4 +122,4 @@ You can modify gen_pattern.cpp in each part and run command "make gen_pattern" i
 :::
 
 # Have fun \!\!\!\!\!
-![114514](https://hackmd.io/_uploads/HJpxI4NUxx.jpg)
+![114514](Image/114514.jpg)
